@@ -1,8 +1,8 @@
 import cv2
 
-faceCascade = cv2.CascadeClassifier("cascade.xml")
+faceCascade = cv2.CascadeClassifier("cascade.xml") #name of the xml file created after training the images
 
-cam = cv2.VideoCapture(0)
+cam = cv2.VideoCapture(0)  #inbuilt opencv command to capture video
 
 while True:
     success, img = cam.read()
